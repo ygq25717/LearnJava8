@@ -3,6 +3,7 @@ package basis.Extend;
 public class Main {
     public static void main(String[] args) {
         Person p = new Person("小明", 12);
+        System.out.println(p.getName());
         Student s = new Student("小红", 20, 99);
         System.out.println(s instanceof PrimaryStudent);
         // TODO: 定义PrimaryStudent，从Student继承，新增grade字段:

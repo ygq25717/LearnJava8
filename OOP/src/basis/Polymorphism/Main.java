@@ -3,8 +3,8 @@ package basis.Polymorphism;
 public class Main {
 	public static void main(String[] args) {
 		Income[] incomes = new Income[] {
-				new Salary(3500), 
-				new Manuscript(6300)
+				new Salary(6000), 
+				new Manuscript(6000)
 		};
 		System.out.println(totalTax(incomes)); // 答：因为静态方法里不能引用非静态方法，
 	}
@@ -30,7 +30,7 @@ class Income{
 		this.income = income;
 	}
 	
-	public double getTax() {
+	public  double getTax() {
 		return getTax();
 	} 
 }
